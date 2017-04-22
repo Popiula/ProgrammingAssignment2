@@ -16,7 +16,7 @@
 ## makeCacheMatrix creates a special "matrix" object that can cache its inverse.
 ## in order for this function to work, x needs to be a square matrix
 
-makeCacheMatrix <- function(x = numeric()) { 
+makeCacheMatrix <- function(x = matrix()) { 
   i <- NULL       ## initializes i (x is initialized as a function argument)
   set <- function(y) {
     x <<- y       ## assigns the input argument y to the x object in the parent environment 
